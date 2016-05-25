@@ -6,11 +6,11 @@ using System.Runtime.CompilerServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("WakaTime")]
-[assembly: AssemblyDescription("WakaTime is a productivity & time tracking tool for programmers. Once the WakaTime plugin is installed, you get a dashboard with reports about your programming by time, language, project, and branch.")]
+[assembly: AssemblyTitle("iTimeTrack")]
+[assembly: AssemblyDescription("iTimeTrack")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("WakaTime")]
-[assembly: AssemblyProduct("WakaTime")]
+[assembly: AssemblyCompany("iTimeTrack")]
+[assembly: AssemblyProduct("iTimeTrack")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

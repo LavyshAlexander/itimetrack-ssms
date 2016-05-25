@@ -11,7 +11,7 @@ namespace WakaTime
             Logger.Debug("Downloading wakatime cli...");
 
             var client = new WebClient();
-            var localZipFile = dir + "\\wakatime-cli.zip";
+            var localZipFile = dir + "\\itimetrack-cli.zip";
 
             // Download wakatime cli
             client.DownloadFile(url, localZipFile);

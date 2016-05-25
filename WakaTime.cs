@@ -78,7 +78,7 @@ namespace WakaTime
                     try
                     {
                         //Add a command to the Commands collection:
-                        Command command = commands.AddNamedCommand2(_addInInstance, "WakaTime", "WakaTime", "WakaTime Settings", true, 59, ref contextGUIDS, (int)vsCommandStatus.vsCommandStatusSupported + (int)vsCommandStatus.vsCommandStatusEnabled, (int)vsCommandStyle.vsCommandStylePictAndText, vsCommandControlType.vsCommandControlTypeButton);
+                        Command command = commands.AddNamedCommand2(_addInInstance, "iTimeTrack", "iTimeTrack", "iTimeTrack Settings", true, 59, ref contextGUIDS, (int)vsCommandStatus.vsCommandStatusSupported + (int)vsCommandStatus.vsCommandStatusEnabled, (int)vsCommandStyle.vsCommandStylePictAndText, vsCommandControlType.vsCommandControlTypeButton);
 
                         //Add a control for the command to the tools menu:
                         if ((command != null) && (toolsPopup != null))
@@ -105,7 +105,7 @@ namespace WakaTime
                 {
                     try
                     {
-                        Directory.Delete(string.Format("{0}\\wakatime-master", WakaTimeConstants.UserConfigDir), true);
+                        Directory.Delete(string.Format("{0}\\itimetrack-master", WakaTimeConstants.UserConfigDir), true);
                     }
                     catch { /* ignored */ }
 

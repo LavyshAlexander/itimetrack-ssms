@@ -6,10 +6,10 @@ namespace WakaTime
 {
     internal static class WakaTimeConstants
     {
-        internal const string CliUrl = "https://github.com/wakatime/wakatime/archive/master.zip";
-        internal const string PluginName = "ssms-wakatime";
+        internal const string CliUrl = "https://github.com/itimetrack/itimetrack/archive/master.zip";
+        internal const string PluginName = "itimetrack-ssms";
         internal const string EditorName = "ssms";
-        internal const string CliFolder = @"wakatime-master\wakatime\cli.py";
+        internal const string CliFolder = @"itimetrack-master\wakatime\cli.py";
         internal static string UserConfigDir = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
         internal static Func<string> CurrentWakaTimeCliVersion = () =>
         {
@@ -17,12 +17,12 @@ namespace WakaTime
             var client = new WebClient();
             try
             {
-                var about = client.DownloadString("https://raw.githubusercontent.com/wakatime/wakatime/master/wakatime/__about__.py");
+                var about = client.DownloadString("https://raw.githubusercontent.com/itimetrack/itimetrack/master/wakatime/__about__.py");
                 var match = regex.Match(about);
 
                 if (!match.Success)
                 {
-                    Logger.Warning("Couldn't auto resolve wakatime cli version");
+                    Logger.Warning("Couldn't auto resolve itimetrack cli version");
                     return string.Empty;
                 }
 
@@ -35,7 +35,7 @@ namespace WakaTime
             catch (Exception ex)
             {
                 {
-                    Logger.Error("Exception when checking current wakatime cli version: ", ex);
+                    Logger.Error("Exception when checking current itimetrack cli version: ", ex);
                     return string.Empty;
                 }
             }
